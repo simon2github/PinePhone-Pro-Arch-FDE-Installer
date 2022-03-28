@@ -144,11 +144,11 @@ chmod +x genfstab
 [ ! -e "genfstab" ] && error "Failed to locate genfstab. Aborting." && exit 2
 
 [ $FILESYSTEM = "ext4" ] && MKFS="mkfs.ext4"
-[ $FILESYSTEM = "f2fs" ] && MKFS="mkfs.f2fs"
+
 
 sudo parted -a optimal ${DISK_IMAGE} mklabel msdos --script
-sudo parted -a optimal ${DISK_IMAGE} mkpart primary fat32 '0%' 256MB --script
-sudo parted -a optimal ${DISK_IMAGE} mkpart primary ext4 256MB 100% --script
+sudo parted -a optimal ${DISK_IMAGE} mkpart primary fat32 65536s 589823s --script
+sudo parted -a optimal ${DISK_IMAGE} mkpart primary ext4 589824s 100% --script
 sudo parted ${DISK_IMAGE} set 1 boot on --script
 
 # The first partition is the boot partition and the second one the root
