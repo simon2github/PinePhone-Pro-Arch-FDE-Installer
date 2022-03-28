@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Copyright 2020 - DanctNIX Community
-#
 # This script setup FDE on Arch Linux ARM for PinePhone
 # and PineTab.
 #
