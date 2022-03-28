@@ -15,6 +15,6 @@ INSTALL to Phone Storage:
 6. Set FDE Passphrase
 7. Boot your PinePhone Pro from MMC (Two-Boot: just power on)
 
-Default credentials
+Default credentials:
 alarm/123456
 
