@@ -5,6 +5,10 @@ Script to install Arch Arm with full disk encryption on a PinePhone Pro.
 Adapted from: dreemurrs-embedded
 https://github.com/dreemurrs-embedded/archarm-mobile-fde-installer
 
+NOTE:
+Only works with fresh build;
+https://github.com/dreemurrs-embedded/archarm-mobile-fde-installer/pull/14
+
 CHANGES:
 - Add PinePhone PRO support
 - Removed Pinephone support
